@@ -335,9 +335,19 @@ Comando utilizado (a partir da raiz do projeto):
 javadoc -d docs -encoding UTF-8 -docencoding UTF-8 -charset UTF-8 -author -version -private -sourcepath src calculadora
 ```
 
-![JavaDoc - página inicial](images/javadoc/javadoc_index.png)
+![JavaDoc - página inicial](images/javadoc/javadoc_1.png)
 
-![JavaDoc - classe Calculadora](images/javadoc/javadoc_calculadora.png)
+![JavaDoc - classe Calculadora](images/javadoc/javadoc_2.png)
+
+![JavaDoc - print 3](images/javadoc/javadoc_3.png)
+
+![JavaDoc - print 4](images/javadoc/javadoc_4.png)
+
+![JavaDoc - print 5](images/javadoc/javadoc_5.png)
+
+![JavaDoc - print 6](images/javadoc/javadoc_6.png)
+
+![JavaDoc - print 7](images/javadoc/javadoc_7.png)
 
 ---
 

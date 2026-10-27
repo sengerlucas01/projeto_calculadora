@@ -86,6 +86,8 @@ Status   : PASSOU
 === RESUMO: 7/7 testes aprovados ===
 ```
 
-![Print dos testes - versão original](images/testes/teste_original.png)
+![Print dos testes - versão original](images/testes/teste_original_1.png)
+
+![Print dos testes - parte 2](images/testes/teste_original_2.png)
 
 > A refatoração, o JavaDoc (`docs/index.html`) e o README completo estão na branch `Refatoracao`.

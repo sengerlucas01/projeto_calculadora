@@ -109,13 +109,13 @@ A aplicação deverá oferecer as seguintes operações:
 
 | Tecnologia | Versão | Utilização |
 |---|---|---|
-| Java | XX | Desenvolvimento |
-| JDK | XX | Compilação e geração do JavaDoc |
+| Java | 21.0.10 (Temurin LTS) | Desenvolvimento |
+| JDK | 21.0.10 | Compilação e geração do JavaDoc |
 | Classe `TesteCalculadora` | — | Testes unitários (entrada, esperado e obtido) |
-| Git | XX | Controle de versão |
+| Git | 2.54.0 | Controle de versão |
 | GitHub | — | Repositório remoto |
 | JavaDoc | — | Documentação |
-| IDE | XX | Ambiente de desenvolvimento |
+| IDE | Eclipse IDE | Ambiente de desenvolvimento |
 
 ---
 

@@ -1,10 +1,35 @@
 package calculadora;
 
+/**
+ * <p><strong>Testes da classe {@link Calculadora}</strong></p>
+ *
+ * <p>Executa os testes unitários da calculadora e exibe, para cada caso,
+ * a <em>entrada utilizada</em>, o <em>resultado esperado</em> e o
+ * <em>resultado obtido</em>, seguido do status (PASSOU ou FALHOU).</p>
+ *
+ * <p>Casos cobertos: soma, subtração, multiplicação, divisão, divisão por zero,
+ * operação inválida e operador nulo.</p>
+ *
+ * @author Lucas Senger Medeiros
+ * @version 2.0
+ */
 public class TesteCalculadora {
 
+    /** Quantidade total de testes executados. */
     private static int total = 0;
+
+    /** Quantidade de testes que passaram. */
     private static int aprovados = 0;
 
+    /**
+     * Testa uma operação que deve retornar um valor.
+     *
+     * @param descricao nome do caso de teste
+     * @param a         primeiro operando
+     * @param b         segundo operando
+     * @param operador  símbolo da operação
+     * @param esperado  resultado esperado
+     */
     private static void testarResultado(String descricao, int a, int b, String operador, int esperado) {
         Calculadora calc = new Calculadora();
 
@@ -18,6 +43,15 @@ public class TesteCalculadora {
         registrar(obtido == esperado);
     }
 
+    /**
+     * Testa uma operação que deve lançar {@link IllegalArgumentException}.
+     *
+     * @param descricao        nome do caso de teste
+     * @param a                primeiro operando
+     * @param b                segundo operando
+     * @param operador         símbolo da operação
+     * @param mensagemEsperada mensagem esperada na exceção
+     */
     private static void testarExcecao(String descricao, int a, int b, String operador, String mensagemEsperada) {
         Calculadora calc = new Calculadora();
 
@@ -37,6 +71,11 @@ public class TesteCalculadora {
         registrar(passou);
     }
 
+    /**
+     * Contabiliza o teste e imprime seu status.
+     *
+     * @param passou {@code true} se o teste passou; {@code false} caso contrário
+     */
     private static void registrar(boolean passou) {
         total++;
         if (passou) {
@@ -48,6 +87,11 @@ public class TesteCalculadora {
         System.out.println();
     }
 
+    /**
+     * Ponto de entrada: executa todos os testes e imprime o resumo.
+     *
+     * @param args argumentos de linha de comando (não utilizados)
+     */
     public static void main(String[] args) {
         System.out.println("=== TESTES DA CALCULADORA (versao refatorada) ===");
         System.out.println();

@@ -21,6 +21,11 @@ public class TesteCalculadora {
     /** Quantidade de testes que passaram. */
     private static int aprovados = 0;
 
+    /** Construtor privado: a classe só possui métodos estáticos e não deve ser instanciada. */
+    private TesteCalculadora() {
+        // Classe utilitária de testes
+    }
+
     /**
      * Testa uma operação que deve retornar um valor.
      *

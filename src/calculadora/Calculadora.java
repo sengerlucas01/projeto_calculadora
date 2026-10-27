@@ -35,6 +35,14 @@ public class Calculadora {
     public static final String MENSAGEM_OPERADOR_INVALIDO = "Operador inválido: ";
 
     /**
+     * Cria uma nova calculadora. A classe não mantém estado interno,
+     * portanto uma única instância pode ser reutilizada em várias operações.
+     */
+    public Calculadora() {
+        // Nenhuma inicialização necessária
+    }
+
+    /**
      * Soma dois números inteiros.
      *
      * @param a primeiro operando
